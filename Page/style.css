@@ -25,6 +25,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: all 1.25s;
+}
+
+.show-menu .hamburguer{
+    right: 16rem;
 }
 
 .line {
@@ -32,6 +37,48 @@
     height: .1rem;
     background-color: #fff;
     box-shadow: 0.08rem 0.08rem 1px #000;
+    transition: transform 1s;
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line1{
+    transform : rotate(45deg)translate(0.5rem, 0.5rem);
+}
+
+.show-menu #line3{
+    transform : rotate(-45deg)translate(0.1rem, -0.2rem);
+}
+
+.hamburguer span {
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#29b15d ;
+    color: cornsilk;
+    font-family: var(--font-action);
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #29b15d;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 1;
 }
 
 header{
@@ -131,8 +178,12 @@ header{
     background-color: cornsilk;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -20rem;
+    transition: all 1s;
+}
 
+.show-menu .sidebar{
+    right: 0;
 }
 
 
@@ -152,8 +203,34 @@ header{
     font-family: var(--font-action);
     font-size: 2rem;
     color: #555;
+    transition: color 1s;
 }
 
 .menu-link:hover{
     color:#00a800 ;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    background-color:#29b15d ;
+    color:#fff;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    transition: backgroundcolor 1s;
+}
+
+.social-media i:hover{
+    background-color: #2cc265;
 }
