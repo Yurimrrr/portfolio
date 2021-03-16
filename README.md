@@ -3,4 +3,4 @@ Meu Portfolio de desenvolvedor
 
 ## Tarefas
 
-Vou fazer controle das tarefas desse projeto pelo github.
+Vou fazer controle das tarefas pelo GitHub
