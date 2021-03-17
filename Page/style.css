@@ -316,3 +316,89 @@ header{
     object-fit: cover;
     width: 100%;
 }
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+}
+
+.card-image-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: rgb(20, 20, 20);
+}
+
+.card-image-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-image-wrapper img{
+    opacity: .5;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0 , 0, .6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.card-info h2{
+    font-family:var(--font-secundary) ;
+    font-size: 2rem;
+    font-weight: 500;
+    color: cornsilk;
+    padding-bottom: 1rem;
+
+}
+
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight: bold;
+    color: #38ef7d;
+    padding-bottom: 1rem;
+}
+
+.card-info p{
+    font-family: var(--font-secundary);
+    color: cornsilk;
+    font-weight: 300;
+    width: 80%;
+    padding-bottom: .5rem;
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background: #11998e; 
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+    background: linear-gradient(to right, #38ef7d, #11998e); 
+    border: none;
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: cornsilk;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
