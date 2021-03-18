@@ -13,13 +13,14 @@
 </head>
 <body>
    <div class="container">
-        <div class="hamburguer">
+
+        <div class="hamburguer"> <!--Clique indicador do menu lateral e X-->
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
-        <header>
+        <header> <!--Banner e informações principais-->
             <div class="image-wrapper">
                 <img src="imagens/bg.jpg" alt="">
             </div>
@@ -30,7 +31,7 @@
             </div>
                 
         </header>
-        <div class="sidebar">
+        <div class="sidebar"> <!--Menu literal poderia mudar o div pra aside-->
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
@@ -40,13 +41,13 @@
                     <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
-            <div class="social-media">
+            <div class="social-media"> 
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
                 <a href=""><i class="fab fa-github-alt"></i></a>
                 <a href=""><i class="fab fa-twitter"></i></a>
             </div>
         </div>
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos"><!--Sessão dos meus conhecimentos e habilidades-->
             <sessao class="sessao-header">
                 <h1>Conhecimentos</h1>
             </sessao> 
@@ -89,7 +90,7 @@
                 </div>
                 <div class="conhecimento">
                     <div class="conhecimento-header">
-                        <i class="fab fa-mobile"></i>
+                        <i class="fas fa-mobile"></i>
                         <h3>Mobile</h3>
                     </div>
                     <div class="conhecimento-text">
@@ -110,7 +111,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-projetos">
+        <section class="sessao-projetos"> <!--Sessão de apresentação dos meus projetos pessoais sobre programação-->
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -155,7 +156,33 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+        </section>
+        <section class="sessao-contato"> <!--Sessão de contato-->
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1> 
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field"  id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar</button>
 
+                    </form>
+
+                </div>
+            </div>
         </section>
 
 
