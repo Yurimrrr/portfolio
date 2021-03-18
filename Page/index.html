@@ -180,9 +180,35 @@
                         <button type="submit" class="btn-submit">Enviar</button>
 
                     </form>
-
                 </div>
             </div>
+           
+        </section>
+        <section class="sessao-orcamento">  
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Quantidade de Páginas</label>
+                    <input type="number" min="1"  name="qtde" id="qtd">
+                    <label for="js">Script de JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de uma Layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho!</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo de Entrega</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button type="submit" class="btn btn-orcamento">Pedir orçamento</button>
+                </form>
+            </div>
+
         </section>
 
 
